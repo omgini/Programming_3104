@@ -4,6 +4,7 @@ let count = 0;
 // const resultH1 = document.getElementsByTagName("h1")[0]; 
 const resultH1 = document.getElementById("result");
 // const resultH1 = document.querySelector("#result");
+const resultH2 = document.getElementById("")
 
 // const plusButton = document.getElementsByTagName("button")[0];
 
@@ -16,7 +17,11 @@ const resultH1 = document.getElementById("result");
 //     count++;    //count+=1 // count = count + 1;
 //     resultH1.innerHTML = count; // 증가한 숫자 화면에 표시하자
 // };
-function plus() {
-    count++;
+function plus(number = 1) {
+    count += number;
+    resultH1.innerHTML = count;
+}
+const plus = (number = 1) => {
+    count += number;
     resultH1.innerHTML = count;
 }
