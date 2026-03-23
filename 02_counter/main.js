@@ -4,7 +4,6 @@ let count = 0;
 // const resultH1 = document.getElementsByTagName("h1")[0]; 
 const resultH1 = document.getElementById("result");
 // const resultH1 = document.querySelector("#result");
-const resultH2 = document.getElementById("")
 
 // const plusButton = document.getElementsByTagName("button")[0];
 
@@ -21,7 +20,8 @@ function plus(number = 1) {
     count += number;
     resultH1.innerHTML = count;
 }
-const plus = (number = 1) => {
-    count += number;
-    resultH1.innerHTML = count;
-}
+// const plus = (number = 1) => {
+//     count += number;
+//     resultH1.innerHTML = count;
+// }
+resultH1.innerHTML = count;
