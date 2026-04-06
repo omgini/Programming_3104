@@ -12,9 +12,19 @@ function CounterApp() {
   return (
     <>
       <h1>{count}</h1>
-      <button onClick={() => setCount((count) => count +1)}>+</button>  {/*Too many re-renders*/}
-      <button onClick={() => setCount((count) => count +2)}>+2</button>  {/*Too many re-renders*/}
-      <button onClick={() => setCount((count) => count -1)}>-</button>  {/*Too many re-renders*/}
+      <button onClick={() => setCount((count) => count + 1)}>+</button>  {/*Too many re-renders*/}
+      <button onClick={() => setCount((count) => count + 2)}>+2</button>  {/*Too many re-renders*/}
+      <button onClick={() => setCount((count) => count - 1)}>-</button>  {/*Too many re-renders*/}
+      <button onClick={() => setCount(0)}>reset</button>  {/*Too many re-renders*/}
+      <button onClick={() => setCount((count) => count + 1 >=10 ? 10 : count +1)}>+(최대 10까지)</button>  {/*Too many re-renders*/}
+      <button onClick={() => setCount((count) => count == 10 ? 10 : count + 1)}>+(최대 10까지)</button>  {/*Too many re-renders*/}
+      <button onClick={() => setCount((count) => count + 1 < 10 ? count + 1 : 10)}>+(최대 10까지)</button>  {/*Too many re-renders*/}
+      <button onClick={() => setCount((count) => {
+        if (count + 1 >= 10) return 10;
+        return count + 1;
+        })}>+(최대 10까지)</button>  {/*Too many re-renders*/}
+        <button onClick={() => plusMax10()}>+(최대 10까지)</button> {/*Too many re-renders*/}
+        <button onClick={plusMax10}>+(최대 10까지)</button> {/*Too many re-renders*/}
      {/* <button
           className="counter"
           onClick={() => setCount((count) => count + 1)}
