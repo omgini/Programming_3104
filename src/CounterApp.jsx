@@ -31,7 +31,7 @@ function CounterApp() {
         return count + 1;
         })}>+(최대 10까지)</button>  {/*Too many re-renders*/}
         <button onClick={() => plusMax10()}>+(최대 10까지)</button> {/*Too many re-renders*/}
-        <button onClick={plusMax10}>+(최대 10까지)</button> {/*Too many re-renders*/}
+        <button onClick={plusMax10}>+(Max 10까지)</button> {/*Too many re-renders*/}
      {/* <button
           className="counter"
           onClick={() => setCount((count) => count + 1)}
