@@ -27,3 +27,17 @@ npm create vite@latest .
 - `{조건식 && 거짓}`
 - onKeyDown
 - localStorage, `useEffect()`
+- `style={{}}`
+- HomeApp: page state가 home이면 `<ButtonPageApp />`, counterapp이면 `<CounterApp />`, todolistapp이면 `<TodoListApp>`
+- npm install react-router-dom
+- ```javascript
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={} />
+        </Routes>
+    </BrowserRouter>
+```
+- ```javascript
+    <Link to="/"></Link>
+```
+- `useNavigate()`
